@@ -594,8 +594,8 @@ This is meant to be used in `post-command-hook'."
       (advice-add 'text-scale-increase :after 'org-bars-indent)
       (advice-add 'org-indent-set-line-properties :override
                   'org-bars-set-line-properties)
-      (advice-add 'org-indent--compute-prefixes :override
-                  'org-bars-compute-prefixes)
+      ;; (advice-add 'org-indent--compute-prefixes :override
+      ;;             'org-bars-compute-prefixes)
       (advice-add 'org-get-level-face :override
                   'org-bars-get-level-face)
       (when org-bars-with-dynamic-stars-p
